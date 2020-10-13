@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/styles'
 import { Button } from 'antd'
 import { Theme } from '../utils/theme'
 import ResponsiveContainer from '../styleguide/responsive-container'
-import LineLength from '../styleguide/line-length'
+import LineLength from '../styleguide/line-lenght'
 import { Headline, Subheadline } from '../styleguide/typography'
 
 const useStyles = makeStyles<Theme>(({ color }) => ({

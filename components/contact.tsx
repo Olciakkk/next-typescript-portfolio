@@ -4,7 +4,7 @@ import { Button } from 'antd'
 import { Theme } from '../utils/theme'
 import ResponsiveContainer from '../styleguide/responsive-container'
 import { Headline, Subheadline } from '../styleguide/typography'
-import LineLength from '../styleguide/line-length'
+import LineLength from '../styleguide/line-lenght'
 
 const useStyles = makeStyles<Theme>(({ color }) => ({
   section: {
