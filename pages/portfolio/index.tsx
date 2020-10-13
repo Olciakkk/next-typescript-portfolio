@@ -2,54 +2,12 @@ import React from 'react'
 import { NextPage } from 'next'
 import Link from 'next/link'
 import { Button, Tag } from 'antd'
-import { makeStyles } from '@material-ui/styles'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { Theme } from '../../utils/theme'
 import LineLength from '../../styleguide/line-length'
 import ResponsiveContainer from '../../styleguide/responsive-container'
 import { Headline, Subheadline, BodyText } from '../../styleguide/typography'
 import { projects } from '../../data/projects'
-
-const useStyles = makeStyles<Theme>(theme => ({
-  bgBlue: {
-    background: theme.color.lightblue,
-  },
-  bgGrey: {
-    background: theme.color.lightgray,
-  },
-  img: {
-    display: 'block',
-    margin: '0 auto',
-    maxWidth: 200,
-    height: 'auto',
-    cursor: 'pointer',
-  },
-  headline: {
-    margin: '20px 0',
-    textAlign: 'center',
-  },
-  subheadline: {
-    margin: '32px 0 8px 0',
-    fontWeight: 600,
-    textAlign: 'center',
-  },
-  buttons: {
-    margin: '40px auto 0 auto',
-    maxWidth: 300,
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
-  chipInner: {
-    margin: 2,
-    color: theme.color.primary,
-    background: '#fff',
-    border: `1px solid ${theme.color.primary}`,
-  },
-  chipBox: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
-}))
+import useStyles from './portfolio.style'
 
 const Portfolio: NextPage = () => {
   const classes = useStyles()
