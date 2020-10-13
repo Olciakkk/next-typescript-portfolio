@@ -1,14 +1,18 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { Project } from '../../../data/types'
-import { BodyText, Headline, LineLength, ResponsiveContainer, Subheadline } from '../../../styleguide'
+import { Headline, LineLength, ResponsiveContainer, Subheadline } from '../../../styleguide'
 import useStyles from './project-tile.style'
 import { RelatedSources } from './related-sources'
 import { TechnologiesUsed } from './technologies-used'
 
 export const ProjectTile: React.FC<{
   className?: string
-} & Project> = ({ imgSrc, headline, bodyText, techUsed, github, demo, className, ...rest }) => {
+  title: string,
+  imageSource: string,
+  technologies: string[],
+  demoUrl: string,
+  githubUrl: string,
+}> = ({ title, imageSource, demoUrl, githubUrl, technologies, children, className, ...rest }) => {
   const classes = useStyles()
   
   return (
@@ -16,30 +20,28 @@ export const ProjectTile: React.FC<{
       <ResponsiveContainer>
         <a
           style={{ cursor: 'default' }}
-          href={demo}
+          href={demoUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
           <LazyLoadImage
             className={classes.img}
             alt=""
-            src={imgSrc}
+            src={imageSource}
             height={585}
             width={285}
           />
         </a>
 
         <LineLength narrow className={classes.lineLength}>
-          <Headline className={classes.headline}>{headline}</Headline>
-          {bodyText.map((text, idx) => (
-            <BodyText key={idx}>{text}</BodyText>
-          ))}
+          <Headline className={classes.headline}>{title}</Headline>
+          {children}
           <Subheadline className={classes.subheadline}>Technology used</Subheadline>
           <div className={classes.chipBox}>
-            <TechnologiesUsed names={techUsed} />
+            <TechnologiesUsed names={technologies} />
           </div>
           <div className={classes.buttons}>
-            <RelatedSources githubUrl={github} demoUrl={demo} />
+            <RelatedSources githubUrl={githubUrl} demoUrl={demoUrl} />
           </div>
         </LineLength>
       </ResponsiveContainer>

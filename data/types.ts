@@ -19,15 +19,6 @@ export type Translations = Record<
   }
 >
 
-export type Project = {
-  imgSrc: string
-  headline: string
-  bodyText: (string | JSX.Element)[]
-  techUsed: string[]
-  github: string
-  demo: string
-}
-
 export type AboutPage = {
   shortIntro: {
     headline: string

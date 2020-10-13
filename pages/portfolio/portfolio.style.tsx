@@ -2,10 +2,10 @@ import { makeStyles } from '@material-ui/styles'
 import { Theme } from '../../utils/theme'
 
 export default makeStyles<Theme>(({ color }) => ({
-  bgBlue: {
+  blueTile: {
     background: color.lightblue,
   },
-  bgGrey: {
+  greyTile: {
     background: color.lightgray,
   },
 }))
