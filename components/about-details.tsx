@@ -1,11 +1,11 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Divider } from 'antd'
-import ResponsiveContainer from '../../styleguide/responsive-container'
-import LineLength from '../../styleguide/line-length'
-import { Subheadline, BodyText } from '../../styleguide/typography'
-import { Theme } from '../../utils/theme'
-import { aboutPage } from '../../data/about'
+import ResponsiveContainer from '../styleguide/responsive-container'
+import LineLength from '../styleguide/line-length'
+import { Subheadline, BodyText } from '../styleguide/typography'
+import { Theme } from '../utils/theme'
+import { aboutPage } from '../data/about'
 
 const { detailedIntro } = aboutPage
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Button } from 'antd'
-import { Theme } from '../../utils/theme'
-import ResponsiveContainer from '../../styleguide/responsive-container'
-import { Headline, Subheadline } from '../../styleguide/typography'
-import LineLength from '../../styleguide/line-length'
+import { Theme } from '../utils/theme'
+import ResponsiveContainer from '../styleguide/responsive-container'
+import { Headline, Subheadline } from '../styleguide/typography'
+import LineLength from '../styleguide/line-length'
 
 const useStyles = makeStyles<Theme>(theme => ({
   section: {

@@ -1,11 +1,11 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import ResponsiveContainer from '../../styleguide/responsive-container'
-import LineLength from '../../styleguide/line-length'
-import { Headline, Subheadline } from '../../styleguide/typography'
-import { Theme } from '../../utils/theme'
-import { aboutPage } from '../../data/about'
+import ResponsiveContainer from '../styleguide/responsive-container'
+import LineLength from '../styleguide/line-length'
+import { Headline, Subheadline } from '../styleguide/typography'
+import { Theme } from '../utils/theme'
+import { aboutPage } from '../data/about'
 
 const useStyles = makeStyles<Theme>(theme => ({
   intro: {
