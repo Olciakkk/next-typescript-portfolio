@@ -8,7 +8,7 @@ type ThemeProps = {
   maxWidth?: DeviceSize
 }
 
-const useStyles = makeStyles<Theme, ThemeProps>(theme => ({
+const useStyles = makeStyles<Theme, ThemeProps>(({ spacing, breakpoints }) => ({
   container: {
     margin: '0 auto',
     width: '100%',
@@ -28,18 +28,18 @@ const useStyles = makeStyles<Theme, ThemeProps>(theme => ({
           return 1280
       }
     },
-    padding: ({ noPadding }) => (noPadding ? 0 : `${theme.spacing(10)}px 0`),
-    [theme.breakpoints.down.md]: {
+    padding: ({ noPadding }) => (noPadding ? 0 : `${spacing(10)}px 0`),
+    [breakpoints.down.md]: {
       padding: ({ noPadding }) =>
         noPadding
-          ? `0 ${theme.spacing(3)}px`
-          : `${theme.spacing(5)}px ${theme.spacing(3)}px`,
+          ? `0 ${spacing(3)}px`
+          : `${spacing(5)}px ${spacing(3)}px`,
     },
-    [theme.breakpoints.down.xs]: {
+    [breakpoints.down.xs]: {
       padding: ({ noPadding }) =>
         noPadding
-          ? `0 ${theme.spacing(2)}px`
-          : `${theme.spacing(5)}px ${theme.spacing(2)}px`,
+          ? `0 ${spacing(2)}px`
+          : `${spacing(5)}px ${spacing(2)}px`,
     },
   },
 }))

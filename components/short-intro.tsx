@@ -7,12 +7,12 @@ import { Headline, Subheadline } from '../styleguide/typography'
 import { Theme } from '../utils/theme'
 import { aboutPage } from '../data/about'
 
-const useStyles = makeStyles<Theme>(theme => ({
+const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
   intro: {
-    backgroundColor: theme.color.lightgray,
+    backgroundColor: color.lightgray,
   },
   headline: {
-    marginBottom: theme.spacing(2),
+    marginBottom: spacing(2),
     textAlign: 'center',
   },
   img: {

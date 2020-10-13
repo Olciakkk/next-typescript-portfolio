@@ -11,9 +11,9 @@ type ThemeProps = {
   spacing: number
 }
 
-const useStyles = makeStyles<Theme, ThemeProps>(theme => ({
+const useStyles = makeStyles<Theme, ThemeProps>(({ color, breakpoints }) => ({
   landing: {
-    background: theme.color.lightgray,
+    background: color.lightgray,
   },
   flex: {
     height: '100%',
@@ -22,7 +22,7 @@ const useStyles = makeStyles<Theme, ThemeProps>(theme => ({
     flexWrap: 'wrap',
     justifyContent: 'center',
     textAlign: 'center',
-    [theme.breakpoints.down.sm]: {
+    [breakpoints.down.sm]: {
       paddingTop: ({ spacing }) => spacing,
     },
   },

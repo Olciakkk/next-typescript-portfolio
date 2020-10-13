@@ -9,17 +9,17 @@ import { aboutPage } from '../data/about'
 
 const { detailedIntro } = aboutPage
 
-const useStyles = makeStyles<Theme>(theme => ({
+const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
   about: {
-    background: theme.color.lightblue,
+    background: color.lightblue,
   },
   subheadline: {
     textAlign: 'center',
     fontWeight: 'bolder',
-    marginBottom: theme.spacing(2),
+    marginBottom: spacing(2),
   },
   divider: {
-    margin: `${theme.spacing(10)}px 0`,
+    margin: `${spacing(10)}px 0`,
     borderTopWidth: 2,
   },
 }))

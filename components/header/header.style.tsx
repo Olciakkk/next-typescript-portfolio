@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/styles";
 import { Theme } from "../../utils/theme";
 
-export default makeStyles<Theme>(theme => ({
+export default makeStyles<Theme>(({ color, spacing, breakpoints }) => ({
   header: {
     background: '#fff',
     boxShadow: '0 2px 8px #f0f1f2',
@@ -13,8 +13,8 @@ export default makeStyles<Theme>(theme => ({
     height: 48,
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.up.md]: {
-      padding: `0 ${theme.spacing(4)}px`,
+    [breakpoints.up.md]: {
+      padding: `0 ${spacing(4)}px`,
     },
   },
   container: {
@@ -25,17 +25,17 @@ export default makeStyles<Theme>(theme => ({
     alignItems: 'center',
   },
   desktopNav: {
-    [theme.breakpoints.down.sm]: {
+    [breakpoints.down.sm]: {
       display: 'none',
     },
   },
   mobileNav: {
     display: 'none',
-    [theme.breakpoints.down.sm]: {
+    [breakpoints.down.sm]: {
       display: 'block',
     },
   },
   icon: {
-    color: theme.color.primary,
+    color: color.primary,
   },
 }))

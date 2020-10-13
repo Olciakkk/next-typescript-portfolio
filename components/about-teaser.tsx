@@ -7,9 +7,9 @@ import ResponsiveContainer from '../styleguide/responsive-container'
 import LineLength from '../styleguide/line-length'
 import { Headline, Subheadline } from '../styleguide/typography'
 
-const useStyles = makeStyles<Theme>(theme => ({
+const useStyles = makeStyles<Theme>(({ color }) => ({
   section: {
-    background: theme.color.lightblue,
+    background: color.lightblue,
   },
   aboutBtn: {
     display: 'flex',

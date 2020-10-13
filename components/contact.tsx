@@ -6,9 +6,9 @@ import ResponsiveContainer from '../styleguide/responsive-container'
 import { Headline, Subheadline } from '../styleguide/typography'
 import LineLength from '../styleguide/line-length'
 
-const useStyles = makeStyles<Theme>(theme => ({
+const useStyles = makeStyles<Theme>(({ color }) => ({
   section: {
-    background: theme.color.lightblue,
+    background: color.lightblue,
   },
   mailBtn: {
     display: 'flex',

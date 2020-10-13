@@ -13,23 +13,23 @@ import ResponsiveContainer from '../styleguide/responsive-container'
 import { Headline, Subheadline, BodyText } from '../styleguide/typography'
 import useResponsiveDesign from '../utils/hooks'
 
-const useStyles = makeStyles<Theme>(theme => ({
+const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
   section: {
-    background: theme.color.lightgray,
+    background: color.lightgray,
   },
   gridItem: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: theme.spacing(2),
+    marginBottom: spacing(2),
   },
   icon: {
     justifySelf: 'center',
-    fontSize: theme.spacing(8),
-    color: theme.color.primary,
+    fontSize: spacing(8),
+    color: color.primary,
   },
   subheadline: {
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(1),
+    marginTop: spacing(1),
+    marginBottom: spacing(1),
     textAlign: 'center',
   },
   skillsBtn: {
