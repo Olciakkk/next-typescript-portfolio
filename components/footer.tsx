@@ -1,6 +1,6 @@
 import React from 'react'
-import SocialMedia from './social-media'
-import ResponsiveContainer from '../styleguide/responsive-container'
+import { SocialMedia } from './social-media'
+import { ResponsiveContainer } from '../styleguide'
 import { BodyText } from '../styleguide/typography'
 
 const container: React.CSSProperties = {
@@ -8,7 +8,7 @@ const container: React.CSSProperties = {
   textAlign: 'center',
 }
 
-const Footer: React.FC = () => (
+export const Footer: React.FC = () => (
   <footer style={container}>
     <ResponsiveContainer>
       <SocialMedia />
@@ -47,5 +47,3 @@ const Footer: React.FC = () => (
     `}</style>
   </footer>
 )
-
-export default Footer

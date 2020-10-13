@@ -3,12 +3,12 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Menu, Button, Drawer } from 'antd'
 import { MenuOutlined } from '@ant-design/icons'
-import ResponsiveContainer from '../../styleguide/responsive-container'
+import { ResponsiveContainer } from '../../styleguide'
 import useStyles from './header.style'
 
 const links = ['/about', '/portfolio', '/skills']
 
-const Footer: React.FC = () => {
+export const Header: React.FC = () => {
   const classes = useStyles()
   const router = useRouter()
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false)
@@ -78,4 +78,3 @@ const Footer: React.FC = () => {
   )
 }
 
-export default Footer

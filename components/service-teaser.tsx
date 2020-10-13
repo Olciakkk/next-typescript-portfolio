@@ -8,10 +8,9 @@ import {
   CheckCircleOutlined,
 } from '@ant-design/icons'
 import { makeStyles } from '@material-ui/styles'
-import { Theme } from '../utils/theme'
-import ResponsiveContainer from '../styleguide/responsive-container'
+import { Theme, useResponsiveDesign } from '../utils'
+import { ResponsiveContainer } from '../styleguide'
 import { Headline, Subheadline, BodyText } from '../styleguide/typography'
-import useResponsiveDesign from '../utils/hooks'
 
 const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
   section: {
@@ -70,7 +69,7 @@ type Props = {
   withButton?: boolean
 }
 
-const ServiceTeaser: React.FC<Props> = ({ withButton }) => {
+export const ServiceTeaser: React.FC<Props> = ({ withButton }) => {
   const classes = useStyles()
   const { spacing } = useResponsiveDesign()
 
@@ -106,5 +105,3 @@ const ServiceTeaser: React.FC<Props> = ({ withButton }) => {
     </section>
   )
 }
-
-export default ServiceTeaser

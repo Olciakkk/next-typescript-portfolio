@@ -1,8 +1,6 @@
 import React from 'react'
 import { NextPage } from 'next'
-
-import ShortIntro from '../components/short-intro'
-import AboutDetailed from '../components/about-details'
+import { AboutDetailed, ShortIntro } from '../components'
 
 const About: NextPage = () => {
   return (

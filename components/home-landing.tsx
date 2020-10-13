@@ -2,10 +2,9 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { makeStyles } from '@material-ui/styles'
 import { Row, Col } from 'antd'
-import { Theme } from '../utils/theme'
-import ResponsiveContainer from '../styleguide/responsive-container'
+import { Theme, useResponsiveDesign } from '../utils'
+import { ResponsiveContainer } from '../styleguide'
 import { Headline, Subheadline, BodyText } from '../styleguide/typography'
-import useResponsiveDesign from '../utils/hooks'
 
 type ThemeProps = {
   spacing: number
@@ -34,7 +33,7 @@ const useStyles = makeStyles<Theme, ThemeProps>(({ color, breakpoints }) => ({
   },
 }))
 
-const HomeLanding: React.FC = () => {
+export const HomeLanding: React.FC = () => {
   const { spacing } = useResponsiveDesign()
   const classes = useStyles({ spacing })
 
@@ -63,5 +62,3 @@ const HomeLanding: React.FC = () => {
     </section>
   )
 }
-
-export default HomeLanding

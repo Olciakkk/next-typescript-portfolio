@@ -49,7 +49,7 @@ const icons: Props[] = [
   },
 ]
 
-const SocialMedia: React.FC = () => {
+export const SocialMedia: React.FC = () => {
   const classes = useStyles()
 
   return (
@@ -60,4 +60,3 @@ const SocialMedia: React.FC = () => {
     </div>
   )
 }
-export default SocialMedia

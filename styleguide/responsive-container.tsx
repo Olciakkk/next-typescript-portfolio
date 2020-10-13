@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import clsx from 'clsx'
-import { Theme, DeviceSize } from '../utils/theme'
+import { Theme, DeviceSize } from '../utils'
 
 type ThemeProps = {
   noPadding?: boolean
@@ -47,7 +47,7 @@ const useStyles = makeStyles<Theme, ThemeProps>(({ spacing, breakpoints }) => ({
 type Props = ThemeProps & React.HTMLAttributes<HTMLDivElement>
 
 // work in progress
-const ResponsiveContainer: React.FC<Props> = ({
+export const ResponsiveContainer: React.FC<Props> = ({
   children,
   noPadding,
   maxWidth,
@@ -62,5 +62,3 @@ const ResponsiveContainer: React.FC<Props> = ({
     </div>
   )
 }
-
-export default ResponsiveContainer

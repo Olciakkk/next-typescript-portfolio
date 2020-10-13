@@ -3,11 +3,10 @@ import { NextPage } from 'next'
 import Link from 'next/link'
 import { Button, Tag } from 'antd'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import LineLength from '../../styleguide/line-lenght'
-import ResponsiveContainer from '../../styleguide/responsive-container'
+import { LineLength, ResponsiveContainer } from '../../styleguide'
 import { Headline, Subheadline, BodyText } from '../../styleguide/typography'
 import { projects } from '../../data/projects'
-import useStyles from './portfolio.style'
+import useStyles from './style'
 
 const Portfolio: NextPage = () => {
   const classes = useStyles()

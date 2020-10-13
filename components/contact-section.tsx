@@ -1,10 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Button } from 'antd'
-import { Theme } from '../utils/theme'
-import ResponsiveContainer from '../styleguide/responsive-container'
+import { Theme } from '../utils'
 import { Headline, Subheadline } from '../styleguide/typography'
-import LineLength from '../styleguide/line-lenght'
+import { LineLength, ResponsiveContainer } from '../styleguide'
 
 const useStyles = makeStyles<Theme>(({ color }) => ({
   section: {
@@ -16,7 +15,7 @@ const useStyles = makeStyles<Theme>(({ color }) => ({
   },
 }))
 
-const ContactSection: React.FC = () => {
+export const ContactSection: React.FC = () => {
   const classes = useStyles()
 
   return (
@@ -38,5 +37,3 @@ const ContactSection: React.FC = () => {
     </section>
   )
 }
-
-export default ContactSection

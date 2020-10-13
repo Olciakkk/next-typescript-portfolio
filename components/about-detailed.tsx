@@ -1,11 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Divider } from 'antd'
-import ResponsiveContainer from '../styleguide/responsive-container'
-import LineLength from '../styleguide/line-lenght'
 import { Subheadline, BodyText } from '../styleguide/typography'
-import { Theme } from '../utils/theme'
+import { Theme } from '../utils'
 import { aboutPage } from '../data/about'
+import { LineLength, ResponsiveContainer } from '../styleguide'
 
 const { detailedIntro } = aboutPage
 
@@ -24,7 +23,7 @@ const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
   },
 }))
 
-const AboutDetailed: React.FC = () => {
+export const AboutDetailed: React.FC = () => {
   const classes = useStyles()
 
   return (
@@ -50,5 +49,3 @@ const AboutDetailed: React.FC = () => {
     </section>
   )
 }
-
-export default AboutDetailed

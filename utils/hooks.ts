@@ -5,7 +5,7 @@ type ReturnType = {
   spacing: number
 }
 
-export default (): ReturnType => {
+export const useResponsiveDesign = (): ReturnType => {
   const [width, setWidth] = useState<number>(0)
   let spacing = 0
 

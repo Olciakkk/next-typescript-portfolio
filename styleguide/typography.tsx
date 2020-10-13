@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/styles'
 import { Typography } from 'antd'
 import { TextProps } from 'antd/lib/typography/Text'
 import { TitleProps } from 'antd/lib/typography/Title'
-import { Theme } from '../utils/theme'
+import { Theme } from '../utils'
 
 type ThemeProps = {
   color?: 'white'

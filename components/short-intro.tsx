@@ -1,10 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import ResponsiveContainer from '../styleguide/responsive-container'
-import LineLength from '../styleguide/line-lenght'
+import { LineLength, ResponsiveContainer } from '../styleguide'
 import { Headline, Subheadline } from '../styleguide/typography'
-import { Theme } from '../utils/theme'
+import { Theme } from '../utils'
 import { aboutPage } from '../data/about'
 
 const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
@@ -27,7 +26,7 @@ const {
   shortIntro: { headline, text },
 } = aboutPage
 
-const ShortIntro: React.FC = () => {
+export const ShortIntro: React.FC = () => {
   const classes = useStyles()
 
   return (
@@ -54,5 +53,3 @@ const ShortIntro: React.FC = () => {
     </section>
   )
 }
-
-export default ShortIntro

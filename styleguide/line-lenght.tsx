@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Theme } from '../utils/theme'
+import { Theme } from '../utils'
 
 type ThemeProps = {
   narrow?: boolean
@@ -17,7 +17,7 @@ type Props = React.HTMLAttributes<HTMLDivElement> & {
   narrow?: boolean
 }
 
-const LineLength: React.FC<Props> = ({ children, narrow, ...rest }) => {
+export const LineLength: React.FC<Props> = ({ children, narrow, ...rest }) => {
   const classes = useStyles({ narrow })
 
   return (
@@ -26,5 +26,3 @@ const LineLength: React.FC<Props> = ({ children, narrow, ...rest }) => {
     </div>
   )
 }
-
-export default LineLength
