@@ -1,7 +1,7 @@
-import React from 'react'
-import { Button, Tooltip } from 'antd'
-import { GithubOutlined, LinkedinOutlined, MediumOutlined } from '@ant-design/icons'
 import { makeStyles } from '@material-ui/styles'
+import React from 'react'
+import { IconButton, IconButtonProps } from './icon-button'
+import { GithubOutlined, LinkedinOutlined, MediumOutlined } from '@ant-design/icons'
 
 const useStyles = makeStyles(() => ({
   iconBox: {
@@ -12,26 +12,7 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-type Props = {
-  url: string
-  title: string
-  icon: JSX.Element
-}
-
-const IconButton: React.FC<Props> = ({ url, title, icon }) => (
-  <Tooltip placement="top" title={title}>
-    <Button
-      type="primary"
-      icon={
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          {icon}
-        </a>
-      }
-    />
-  </Tooltip>
-)
-
-const icons: Props[] = [
+const icons: IconButtonProps[] = [
   {
     title: 'GitHub',
     url: 'https://github.com/PavelSrom',
@@ -49,7 +30,9 @@ const icons: Props[] = [
   },
 ]
 
-export const SocialMedia: React.FC = () => {
+export const SocialMedia: React.FC<{
+
+}> = () => {
   const classes = useStyles()
 
   return (
