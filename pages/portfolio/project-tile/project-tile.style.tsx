@@ -1,13 +1,7 @@
-import { makeStyles } from "@material-ui/styles";
-import { Theme } from "../../utils/theme";
+import { makeStyles } from '@material-ui/styles'
+import { Theme } from '../../../utils/'
 
 export default makeStyles<Theme>(({ color }) => ({
-  bgBlue: {
-    background: color.lightblue,
-  },
-  bgGrey: {
-    background: color.lightgray,
-  },
   img: {
     display: 'block',
     margin: '0 auto',
@@ -29,12 +23,6 @@ export default makeStyles<Theme>(({ color }) => ({
     maxWidth: 300,
     display: 'flex',
     justifyContent: 'space-between',
-  },
-  chipInner: {
-    margin: 2,
-    color: color.primary,
-    background: '#fff',
-    border: `1px solid ${color.primary}`,
   },
   chipBox: {
     display: 'flex',
