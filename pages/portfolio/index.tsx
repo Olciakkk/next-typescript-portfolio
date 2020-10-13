@@ -49,24 +49,26 @@ const Portfolio: NextPage = () => {
               </div>
               <div className={classes.buttons}>
                 <Link href={github}>
-                  <a href={github} target="_blank" rel="noopener noreferrer">
-                    <Button target="_blank" href={github} type="default">
-                      View code
-                    </Button>
-                  </a>
+                  <Button
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={github}
+                    type="default"
+                  >
+                    View code
+                  </Button>
                 </Link>
 
                 <Link href={demo}>
-                  <a href={github} target="_blank" rel="noopener noreferrer">
-                    <Button
-                      target="_blank"
-                      href={github}
-                      type="primary"
-                      style={{ color: '#fff' }}
-                    >
-                      View demo
-                    </Button>
-                  </a>
+                  <Button
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={github}
+                    type="primary"
+                    style={{ color: '#fff' }}
+                  >
+                    View demo
+                  </Button>
                 </Link>
               </div>
             </LineLength>
