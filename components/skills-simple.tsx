@@ -1,10 +1,10 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { makeStyles } from '@material-ui/styles'
-import { Theme } from '../../utils/theme'
-import { Subheadline, BodyText } from '../../styleguide/typography'
-import LineLength from '../../styleguide/line-length'
-import { skillsSimple } from '../../data/skills'
+import { Theme } from '../utils/theme'
+import { Subheadline, BodyText } from '../styleguide/typography'
+import { skillsSimple } from '../data/skills'
+import { LineLength } from '../styleguide'
 
 const useStyles = makeStyles<Theme>(theme => ({
   img: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles<Theme>(theme => ({
   },
 }))
 
-const SkillsSimple: React.FC = () => {
+export const SkillsSimple: React.FC = () => {
   const classes = useStyles()
 
   return (
@@ -43,5 +43,3 @@ const SkillsSimple: React.FC = () => {
     </LineLength>
   )
 }
-
-export default SkillsSimple
