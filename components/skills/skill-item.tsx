@@ -35,7 +35,7 @@ const useStyles = makeStyles<Theme>(theme => ({
   },
 }))
 
-const SkillItem: React.FC<Skill> = ({ name, description, additional }) => {
+export const SkillItem: React.FC<Skill> = ({ name, description, additional }) => {
   const classes = useStyles()
 
   return (
@@ -56,5 +56,3 @@ const SkillItem: React.FC<Skill> = ({ name, description, additional }) => {
     </Col>
   )
 }
-
-export default SkillItem

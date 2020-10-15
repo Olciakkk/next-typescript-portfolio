@@ -2,14 +2,14 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Collapse, Row } from 'antd'
 import { DesktopOutlined, DatabaseOutlined } from '@ant-design/icons'
-import { Theme } from '../utils/theme'
-import { Subheadline } from '../styleguide/typography'
-import { frontEnd, backEnd } from '../data/skills'
+import { Theme } from '../../utils/theme'
+import { Subheadline } from '../../styleguide/typography'
+import { frontEnd, backEnd } from '../../data/skills'
 import {
   frontEnd as frontEndLabels,
   backEnd as backEndLabels,
-} from '../data/translations'
-import SkillItem from './skill-item'
+} from '../../data/translations'
+import { SkillItem } from './skill-item'
 
 const useStyles = makeStyles<Theme>(theme => ({
   icon: {

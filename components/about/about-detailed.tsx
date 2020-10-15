@@ -1,9 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Divider } from 'antd'
-import { Theme } from '../utils'
-import { aboutPage } from '../data/about'
-import { LineLength, ResponsiveContainer, Subheadline, BodyText } from '../styleguide'
+import { Theme } from '../../utils'
+import { aboutPage } from '../../data/about'
+import { LineLength, ResponsiveContainer, Subheadline, BodyText } from '../../styleguide'
 
 const { detailedIntro } = aboutPage
 

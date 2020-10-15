@@ -1,10 +1,10 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { makeStyles } from '@material-ui/styles'
-import { Theme } from '../utils/theme'
-import { Subheadline, BodyText } from '../styleguide/typography'
-import { skillsSimple } from '../data/skills'
-import { LineLength } from '../styleguide'
+import { Theme } from '../../utils/theme'
+import { Subheadline, BodyText } from '../../styleguide/typography'
+import { skillsSimple } from '../../data/skills'
+import { LineLength } from '../../styleguide'
 
 const useStyles = makeStyles<Theme>(theme => ({
   img: {
