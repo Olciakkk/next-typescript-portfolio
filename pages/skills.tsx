@@ -22,7 +22,7 @@ const useStyles = makeStyles<Theme>(theme => ({
 
 const Skills: NextPage = () => {
   const classes = useStyles()
-  const [detailedVisible, setDetailedVisible] = useState<boolean>(false)
+  const [isDetailedView, setView] = useState<boolean>(false)
 
   return (
     <>
@@ -35,12 +35,12 @@ const Skills: NextPage = () => {
               Explore the stack and technologies I use!
             </Subheadline>{' '}
             <Switch
-              checked={detailedVisible}
-              onChange={() => setDetailedVisible(!detailedVisible)}
+              checked={isDetailedView}
+              onChange={() => setView(!isDetailedView)}
             />
             <BodyText>View in detail</BodyText>
           </div>
-          {detailedVisible ? <SkillsDetailed /> : <SkillsSimple />}
+          {isDetailedView ? <SkillsDetailed /> : <SkillsSimple />}
         </ResponsiveContainer>
       </section>
     </>

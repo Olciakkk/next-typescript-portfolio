@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/styles'
-import { Theme } from '../../../utils/'
+import { Theme } from '../../utils'
 
-export default makeStyles<Theme>(({ color }) => ({
+export default makeStyles<Theme>(() => ({
   img: {
     display: 'block',
     margin: '0 auto',

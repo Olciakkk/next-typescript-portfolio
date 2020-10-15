@@ -1,6 +1,6 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { Headline, LineLength, ResponsiveContainer, Subheadline } from '../../../styleguide'
+import { Headline, LineLength, ResponsiveContainer, Subheadline } from '../../styleguide'
 import useStyles from './project-tile.style'
 import { RelatedSources } from './related-sources'
 import { TechnologiesUsed } from './technologies-used'

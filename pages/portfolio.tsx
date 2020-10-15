@@ -1,9 +1,19 @@
 import React from 'react'
 import { NextPage } from 'next'
-import { projects } from '../../data/projects'
-import useStyles from './portfolio.style'
-import { ProjectTile } from './project-tile/project-tile'
-import { BodyText } from '../../styleguide'
+import { BodyText } from '../styleguide'
+import { ProjectTile } from '../components'
+import { makeStyles } from '@material-ui/styles'
+import { Theme } from '../utils/theme'
+
+ const useStyles = makeStyles<Theme>(({ color }) => ({
+  blueTile: {
+    background: color.lightblue,
+  },
+  greyTile: {
+    background: color.lightgray,
+  },
+}))
+
 
 export const Portfolio: NextPage = () => {
   const classes = useStyles()
@@ -99,3 +109,5 @@ export const Portfolio: NextPage = () => {
     </>
   )
 }
+
+export default Portfolio
