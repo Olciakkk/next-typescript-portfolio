@@ -1,6 +1,9 @@
 {
   "name": "next-typescript-portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.8.3"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",

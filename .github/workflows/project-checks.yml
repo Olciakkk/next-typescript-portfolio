@@ -1,0 +1,23 @@
+name: Project checks
+
+on:
+  push:
+    branches:
+      - '*'
+      - '**'
+
+jobs:
+  build:
+    name: Build App
+    runs-on: ubuntu-18.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use nodejs 12.18.3
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.18.3'
+      - name: Install dependencies
+        run: npm install
+      - name: Build app
+        run: npm run build
