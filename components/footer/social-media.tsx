@@ -1,7 +1,8 @@
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
-import { IconButton } from './icon-button'
 import { GithubOutlined, LinkedinOutlined, MediumOutlined } from '@ant-design/icons'
+
+import { IconButton } from './icon-button'
 
 const useStyles = makeStyles(() => ({
   iconBox: {

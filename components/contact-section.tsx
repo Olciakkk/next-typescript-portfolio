@@ -1,9 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Button } from 'antd'
-import { Theme } from '../utils'
-import { Headline, Subheadline } from '../styleguide/typography'
-import { LineLength, ResponsiveContainer } from '../styleguide'
+
+import { Theme } from '@portfolio/utils'
+import { LineLength, ResponsiveContainer, Headline, Subheadline } from '@portfolio/styleguide'
 
 const useStyles = makeStyles<Theme>(({ color }) => ({
   section: {

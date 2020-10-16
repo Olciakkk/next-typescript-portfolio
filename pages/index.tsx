@@ -1,6 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
-import { AboutTeaser, ContactSection, HomeLanding, ServiceTeaser } from '../components'
+
+import { AboutTeaser, ContactSection, HomeLanding, ServiceTeaser } from '@portfolio/components'
 
 const Homepage: NextPage = () => (
   <>

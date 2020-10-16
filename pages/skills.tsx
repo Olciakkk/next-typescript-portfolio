@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { NextPage } from 'next'
 import { Switch } from 'antd'
+
 import { makeStyles } from '@material-ui/styles'
-import { ServiceTeaser, SkillsDetailed, SkillsSimple } from '../components'
-import { ResponsiveContainer, Headline, BodyText, Subheadline } from '../styleguide'
-import { Theme } from '../utils'
+import { ServiceTeaser, SkillsDetailed, SkillsSimple } from '@portfolio/components'
+import { ResponsiveContainer, Headline, BodyText, Subheadline } from '@portfolio/styleguide'
+import { Theme } from '@portfolio/utils'
 
 const useStyles = makeStyles<Theme>(theme => ({
   section: {

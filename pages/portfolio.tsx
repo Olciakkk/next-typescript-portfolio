@@ -1,9 +1,10 @@
 import React from 'react'
 import { NextPage } from 'next'
-import { BodyText } from '../styleguide'
-import { ProjectTile } from '../components'
 import { makeStyles } from '@material-ui/styles'
-import { Theme } from '../utils/theme'
+
+import { BodyText } from '@portfolio/styleguide'
+import { ProjectTile } from '@portfolio/components'
+import { Theme } from '@portfolio/utils'
 
  const useStyles = makeStyles<Theme>(({ color }) => ({
   blueTile: {

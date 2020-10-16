@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Theme } from '../utils'
+
+import { Theme } from '@portfolio/utils'
 
 type ThemeProps = {
   narrow?: boolean

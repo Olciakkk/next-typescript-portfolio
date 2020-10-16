@@ -1,7 +1,8 @@
 import React from 'react'
-import useStyles from './typograpy.styles'
 import clsx from 'clsx'
 import Text, { TextProps } from 'antd/lib/typography/Text'
+
+import useStyles from './typography.styles'
 
 export const Subheadline: React.FC<TextProps> = ({ children, className, ...rest }) => {
   const classes = useStyles({})

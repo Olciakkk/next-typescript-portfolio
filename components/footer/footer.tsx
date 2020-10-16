@@ -1,7 +1,9 @@
 import React from 'react'
+
+import { ResponsiveContainer } from '@portfolio/styleguide'
+import { BodyText } from '@portfolio/styleguide/typography'
+
 import { SocialMedia } from './social-media'
-import { ResponsiveContainer } from '../../styleguide'
-import { BodyText } from '../../styleguide/typography'
 
 const container: React.CSSProperties = {
   backgroundColor: '#333',

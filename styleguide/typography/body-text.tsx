@@ -1,6 +1,7 @@
 import React from 'react'
-import useStyles from './typograpy.styles'
 import Text, { TextProps } from "antd/lib/typography/Text"
+
+import useStyles from './typography.styles'
 
 type BodyTextProps = TextProps & Partial<{
   color: 'white'

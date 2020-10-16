@@ -1,7 +1,8 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import clsx from 'clsx'
-import { Theme, DeviceSize } from '../utils'
+
+import { Theme, DeviceSize } from '@portfolio/utils'
 
 type ThemeProps = {
   noPadding?: boolean

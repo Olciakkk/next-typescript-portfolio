@@ -1,5 +1,6 @@
-import { makeStyles } from "@material-ui/styles";
-import { Theme } from "../../utils/theme";
+import { makeStyles } from '@material-ui/styles'
+
+import { Theme } from '@portfolio/utils/theme'
 
 export default makeStyles<Theme>(({ color, spacing, breakpoints }) => ({
   header: {

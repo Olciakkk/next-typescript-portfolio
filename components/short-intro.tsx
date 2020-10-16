@@ -1,10 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { LineLength, ResponsiveContainer } from '../styleguide'
-import { Headline, Subheadline } from '../styleguide/typography'
-import { Theme } from '../utils'
-import { aboutPage } from '../data/about'
+
+import { LineLength, ResponsiveContainer, Headline, Subheadline } from '@portfolio/styleguide'
+import { Theme } from '@portfolio/utils'
+import { aboutPage } from '@portfolio/data/about'
 
 const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
   intro: {

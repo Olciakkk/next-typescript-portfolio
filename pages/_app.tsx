@@ -1,10 +1,11 @@
 import React from 'react'
 import App from 'next/app'
 import Head from 'next/head'
-import '../antd.less'
 import { ThemeProvider } from '@material-ui/styles'
-import { theme } from '../utils'
-import { Header, Footer } from '../components'
+
+import '@portfolio/antd.less'
+import { theme } from '@portfolio/utils'
+import { Header, Footer } from '@portfolio/components'
 
 export default class MyApp extends App {
   componentDidMount() {

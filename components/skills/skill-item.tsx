@@ -1,9 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Tag, Col } from 'antd'
-import { Skill } from '../../data/types'
-import { Theme } from '../../utils/theme'
-import { BodyText } from '../../styleguide/typography'
+
+import { Skill } from '@portfolio/data/types'
+import { Theme } from '@portfolio/utils/theme'
+import { BodyText } from '@portfolio/styleguide/typography'
 
 const useStyles = makeStyles<Theme>(theme => ({
   flexColumn: {

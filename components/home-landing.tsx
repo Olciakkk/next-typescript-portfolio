@@ -2,9 +2,9 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { makeStyles } from '@material-ui/styles'
 import { Row, Col } from 'antd'
-import { Theme, useResponsiveDesign } from '../utils'
-import { ResponsiveContainer } from '../styleguide'
-import { Headline, Subheadline, BodyText } from '../styleguide/typography'
+
+import { Theme, useResponsiveDesign } from '@portfolio/utils'
+import { ResponsiveContainer, Headline, Subheadline, BodyText } from '@portfolio/styleguide'
 
 type ThemeProps = {
   spacing: number

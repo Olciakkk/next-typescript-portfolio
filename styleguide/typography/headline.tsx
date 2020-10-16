@@ -1,7 +1,8 @@
 import React from 'react'
 import { TitleProps } from 'antd/lib/typography/Title'
-import useStyles from './typograpy.styles'
 import clsx from 'clsx'
+
+import useStyles from './typography.styles'
 
 export const Headline: React.FC<TitleProps> = ({ children, className, ...rest }) => {
   const classes = useStyles({})

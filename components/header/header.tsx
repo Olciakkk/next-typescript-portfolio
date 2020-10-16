@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Menu, Button, Drawer } from 'antd'
+
 import { MenuOutlined } from '@ant-design/icons'
-import { ResponsiveContainer } from '../../styleguide'
+
+import { ResponsiveContainer } from '@portfolio/styleguide'
 import useStyles from './header.style'
 
 const links = ['/about', '/portfolio', '/skills']

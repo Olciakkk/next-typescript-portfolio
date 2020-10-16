@@ -1,7 +1,8 @@
 import React from 'react'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheets } from '@material-ui/styles'
-import { theme } from '../utils'
+
+import { theme } from '@portfolio/utils'
 
 class MyDocument extends Document {
   render() {
@@ -11,7 +12,7 @@ class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.color.primary} />
           <link
-            href="https://fonts.googleapis.com/css?family=Caveat&display=swap"
+            href='https://fonts.googleapis.com/css?family=Caveat&display=swap'
             rel="stylesheet"
           />
         </Head>

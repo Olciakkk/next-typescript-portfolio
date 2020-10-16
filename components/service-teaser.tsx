@@ -8,9 +8,9 @@ import {
   CheckCircleOutlined,
 } from '@ant-design/icons'
 import { makeStyles } from '@material-ui/styles'
-import { Theme, useResponsiveDesign } from '../utils'
-import { ResponsiveContainer } from '../styleguide'
-import { Headline, Subheadline, BodyText } from '../styleguide/typography'
+
+import { Theme, useResponsiveDesign } from '@portfolio/utils'
+import { ResponsiveContainer, Headline, Subheadline, BodyText } from '@portfolio/styleguide'
 
 const useStyles = makeStyles<Theme>(({ color, spacing }) => ({
   section: {
